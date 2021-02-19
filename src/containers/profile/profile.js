@@ -91,7 +91,7 @@ const Profile = (props) => {
                 <div className='profile-pic'>
                     <img src={profilePic} alt='profile picture' />
                 </div>
-                <h3>{visitedUser.name}</h3>
+                <h2>{visitedUser.name}</h2>
                 <div className='tabs'>
                     <div className='tab' onClick={() => setRenderedComponent(renderAlbums)}>
                         <IoMdImages className='icon-tab-photos' /> &nbsp; <p>Photo/Video</p>

@@ -76,3 +76,13 @@
 .icon-tab-todos {
     font-size: 30px;
 }
+
+.rapper {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-top-left-radius: 65px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+}

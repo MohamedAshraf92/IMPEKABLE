@@ -1,0 +1,109 @@
+.login-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner {
+    width: 50%;
+    height: 100vh;
+}
+
+.banner img {
+    height: 100%;
+    width: 100%;
+}
+
+.login-form {
+    text-align: center;
+    margin: auto;
+}
+
+.form-body {
+    width: 400px;
+}
+
+.login-form h1 {
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 0.2em;
+    line-height: 21px;
+    color: #43425d;
+}
+
+.login-form p {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+    color: #4d4f5c;
+    opacity: 0.5;
+    margin-bottom: 50px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+.form-row label {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 15px;
+    text-align: left;
+    color: #43425d;
+}
+
+.form-row input {
+    border: none;
+    border-bottom: 2px solid #e9e9f0;
+}
+
+.form-row input:focus {
+    outline: none;
+}
+
+.under-from {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.form-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login-btn {
+    width: 185px;
+    height: 50px;
+    border-radius: 4px;
+    background: #43425d;
+    border: 1px solid #43425d;
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+}
+
+.sing-up-btn {
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+    color: #4d4f5c;
+    width: 185px;
+    height: 50px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid #43425d;
+    padding: 0;
+}

@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
+import { Redirect, Route, Switch } from 'react-router-dom';
+
 import './App.css';
+import LoginPage from './containers/loginPage/loginPage'
+import Layout from './containers/layout/layout'
+import Home from './containers/home/home'
+import Albums from './containers/albums/albums'
+import Todos from './containers/todos/todos'
+import Profile from './containers/profile/profile'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const isLogged = useSelector(state => state.loginReducer.isLogged)
+
+    return (
+        <div className="App">
+            <Switch>
+                <Route exact path='/'>
+                    { isLogged? <Redirect to='/home' /> : <LoginPage /> }
+                </Route>
+                <Layout>
+                    <Route exact path='/home' component={Home} />
+                    <Route exact path='/albums' component={Albums} />
+                    <Route exact path='/todos' component={Todos} />
+                    <Route exact path='/user/:id' component={Profile} />
+                </Layout>
+            </Switch>
+        </div>
+    );
 }
 
 export default App;

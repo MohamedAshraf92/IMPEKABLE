@@ -1,0 +1,47 @@
+.user-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-card-pp {
+    height: 50px;
+}
+
+.user-icon {
+    font-size: 50px;
+    color: #202631;
+}
+
+.user-card-info {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.user-link,
+.user-link:active,
+.user-link:visited {
+    text-decoration: none;
+}
+
+.user-card-info h4 {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    color: #202631;
+    margin: 0;
+}
+
+.user-card-info p {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+    color: #8f9bb3;
+    margin: 0;
+}

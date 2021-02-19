@@ -1,0 +1,66 @@
+.bachground-list {
+    width: 25%;
+}
+
+.side-list {
+    background-color: #f7f9fc;
+    border-top-left-radius: 65px;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+.tools-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search {
+    width: 60%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #E4E9F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    height: 50%;
+    outline: none;
+}
+
+.icon-list {
+    font-size: 1.4rem;
+}
+
+.icon-list:hover {
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text h4 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #202631;
+}
+
+.text p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #2e4b9c;
+}
+
+.people-list {
+    margin-left: 15px;
+}
